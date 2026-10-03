@@ -30,6 +30,10 @@ const Total = ({ parts }) => {
   return <p>Total units: {total}</p>
 }
 
+const Footer = ({ name, course, section }) => {
+  return <p>{name} - {course} - {section}</p>
+}
+
 const App = () => {
   const course = {
     name: "CSIT340 - Web Systems and Technologies",
@@ -54,6 +58,11 @@ const App = () => {
       <Header course={course} />
       <Content parts={course.parts} />
       <Total parts={course.parts} />
+      <Footer
+        name="Rey Uriel Y. Legaspi"
+        course="CSIT340"
+        section="G6"
+      />
     </div>
   )
 }
